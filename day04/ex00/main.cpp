@@ -1,0 +1,16 @@
+#include "Sorcerer.hpp"
+#include "Victim.hpp"
+#include "Peon.hpp"
+
+int main(void)
+{
+    Sorcerer robert("Robert", "the Magnificent");
+    Victim jim("Jimmy");
+    Peon joe("Joe");
+    std::cout << robert << jim << joe;
+    robert.polymorph(jim);
+    robert.polymorph(joe);
+    // добавить еще 1 произц класс от жертвы
+    return 0;
+}
+
